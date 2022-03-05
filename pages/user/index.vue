@@ -9,6 +9,7 @@
         >
       </p>
     </div>
+    <p><nuxt-link to="/">to Top</nuxt-link></p>
   </div>
 </template>
 

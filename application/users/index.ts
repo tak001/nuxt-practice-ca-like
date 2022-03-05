@@ -1,4 +1,4 @@
-import di from '@/di';
+import di from '@/di/user';
 import User from '@/domain/models/users/UserResponse';
 
 class UserUseCase {

@@ -1,6 +1,6 @@
 /* eslint-disable import/no-absolute-path */
 import { AxiosRequestConfig } from 'axios';
-import { USERS } from '@/infrastructure/Path';
+import { BOOKS, USERS } from '@/infrastructure/Path';
 import axiosBase from '@/infrastructure/provider/axiosBase';
 import IClient from '@/infrastructure/provider/IClient';
 import { objectKeysToCamel } from '@/utils/changeCase';
@@ -18,6 +18,10 @@ const mockPaths = [
   {
     path: USERS,
     value: require('@/infrastructure/mock/data/users/index.ts').default,
+  },
+  {
+    path: BOOKS,
+    value: require('@/infrastructure/mock/data/books/index.ts').default,
   },
 ];
 

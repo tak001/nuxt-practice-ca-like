@@ -1,6 +1,7 @@
 <template>
   <div>
-    <nuxt-link to="/user">to User</nuxt-link>
+    <p><nuxt-link to="/user">to User</nuxt-link></p>
+    <p><nuxt-link to="/book">to Book</nuxt-link></p>
   </div>
 </template>
 
