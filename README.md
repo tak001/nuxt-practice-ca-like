@@ -28,7 +28,8 @@ module.exports = {
 1. .env.development.js を作成
 2. API_URL を指定
 3. `npm run dev` を叩く
-4. API_URL にアクセス
+4. ローカルサーバーを立てる
+5. http://localhost:3000 にアクセス
 ```
 
 ### 本番
@@ -37,7 +38,6 @@ module.exports = {
 1. .env.production.js を作成
 2. API_URL を指定
 3. `npm run prod` を叩く
-4. API_URL にアクセス
 ```
 
 ### jest
