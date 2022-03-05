@@ -1,20 +1,49 @@
 # nuxt-practice-ca-like
 
-## Build Setup
+## 手順
+
+### install dependencies
 
 ```bash
-# install dependencies
-$ npm install
+% npm i
+```
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### mockを使用した開発
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+```markdown
+1. .env.local.js を作成
+2. 以下のように API_URL を指定する
 
-# generate static project
-$ npm run generate
+module.exports = {
+  API_URL: 'http://localhost:8881',
+};
+
+3. `npm run local` を叩く
+4. http://localhost:3000 にアクセス
+```
+
+### ローカルサーバーを立てた開発
+
+```markdown
+1. .env.development.js を作成
+2. API_URL を指定
+3. `npm run dev` を叩く
+4. API_URL にアクセス
+```
+
+### 本番
+
+```markdown
+1. .env.production.js を作成
+2. API_URL を指定
+3. `npm run prod` を叩く
+4. API_URL にアクセス
+```
+
+### jest
+
+```markdown
+% npm run test
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
