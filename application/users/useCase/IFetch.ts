@@ -1,6 +1,5 @@
-import { User } from '@/domain/models/users/user';
-import { Id } from '@/domain/models/users/vo';
+import User from '@/domain/models/users/UserResponse';
 
 export interface IFetch {
-  execute: (id: Id) => Promise<User>;
+  execute: (id: User['id']) => Promise<User>;
 }

@@ -1,7 +1,6 @@
-import { User } from '@/domain/models/users/user';
-import { Id } from '@/domain/models/users/vo';
+import User from '@/domain/models/users/UserResponse';
 
 export default interface IUserRepository {
   fetchAll(): Promise<User[]>;
-  fetch(id: Id): Promise<User>;
+  fetch(id: User['id']): Promise<User>;
 }

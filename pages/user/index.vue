@@ -15,7 +15,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import userUseCase from '@/application/users';
-import { User } from '@/domain/models/users/user';
+import User from '@/domain/models/users/userResponse';
 
 interface DataType {
   users: User[];

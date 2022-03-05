@@ -1,6 +1,5 @@
 import di from '@/di';
-import { User } from '@/domain/models/users/user';
-import { Id } from '@/domain/models/users/vo';
+import User from '@/domain/models/users/UserResponse';
 
 class UserUseCase {
   async findAll(): Promise<User[]> {
@@ -9,7 +8,7 @@ class UserUseCase {
     return result;
   }
 
-  async find(id: Id): Promise<User> {
+  async find(id: User['id']): Promise<User> {
     const useCase = di.getInstance('fetch');
     const result = await useCase.execute(id);
     return result;

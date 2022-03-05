@@ -1,5 +1,5 @@
 import { IFetchAll } from '@/application/users/useCase/IFetchAll';
-import { User } from '@/domain/models/users/user';
+import User from '@/domain/models/users/UserResponse';
 import IUserRepository from '@/interfaces/repository/user/IUserRepository';
 
 export class FetchAll implements IFetchAll {

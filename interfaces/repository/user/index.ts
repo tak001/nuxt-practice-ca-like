@@ -1,5 +1,4 @@
-import { User } from '@/domain/models/users/user';
-import { Id } from '@/domain/models/users/vo';
+import User from '@/domain/models/users/UserResponse';
 import { API, USERS } from '@/infrastructure/Path';
 import IClient from '@/infrastructure/provider/IClient';
 import IUserRepository from '@/interfaces/repository/user/IUserRepository';
@@ -12,7 +11,7 @@ export class UserRepository implements IUserRepository {
     return data.data;
   }
 
-  async fetch(id: Id): Promise<User> {
+  async fetch(id: User['id']): Promise<User> {
     const { data } = await this._client.get<User>(API + `${USERS}/${id}`);
     return data.data;
   }
