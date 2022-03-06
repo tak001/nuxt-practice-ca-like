@@ -50,7 +50,7 @@ module.exports = {
 
 - Domain Layer の見直し
 - DIコンテナの作り直し
-- Request(args)型の持たせ方
+- Request(args)型の持たせ方とレイヤーの置き場所
 - storeへ移行
 - unit test
 - e2e test
