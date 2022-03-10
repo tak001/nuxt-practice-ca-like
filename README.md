@@ -48,9 +48,12 @@ module.exports = {
 
 ## TODO
 
-- Domain Layer の見直し
+- Domainの見直し
 - DIコンテナの作り直し
-- Request(args)型の持たせ方とレイヤーの置き場所
+- Request(args)型の持たせ方と置き場所
 - storeへ移行
+- 集約ルートの作成
+  - Domainに必要な値を抽出
+  - フロントで使用する値に加工
 - unit test
 - e2e test
